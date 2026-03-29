@@ -1,0 +1,44 @@
+/*PAGE POUBELLE*/
+.dossier-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.dossier{
+    border-radius: 1vw;
+    max-width: 130%;
+    height: auto;
+    display: block;
+    box-shadow: 0 1vh 3vh rgba(0, 0, 0, 0.5);
+}
+
+.close-zone {
+    position: absolute;
+    top: 0vw;
+    right: -11.6vw;
+    width: 1vw;
+    height: 1vw;
+    cursor: pointer;
+    z-index: 101;    
+
+}
+
+.close-zone2 {
+    position: absolute;
+    top: 0vw;
+    right: -14.3vw;
+    width: 1vw;
+    height: 1vw;
+    cursor: pointer;
+    z-index: 101;
+}
+
+/*PAGE GOOGLE*/
+.google{
+    border-radius: 1vw;
+    max-width: 130%;
+    height: auto;
+}
