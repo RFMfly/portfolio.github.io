@@ -1,26 +1,28 @@
-var poubelle = document.querySelector('.bin, .poubelle');
+let poubelle = document.querySelector('.bin, .poubelle');
 
 if (poubelle) {
+    
     poubelle.addEventListener('click', function() {
+if (document.querySelector('.dossier-container')) return
     // Conteneur parent
-    var container = document.createElement('div');
+    const container = document.createElement('div');
     container.className = 'dossier-container';
     
     // Image du dossier
-    var folder = document.createElement('img');
+    const folder = document.createElement('img');
     folder.src = 'images/corbeille_folder.png';
     folder.alt = 'Dossier';
     folder.className = 'dossier';
     
     // Zone de fermeture X
-    var closeZone = document.createElement('div');
+    const closeZone = document.createElement('div');
     closeZone.className = 'close-zone';
     closeZone.addEventListener('click', function() {
         container.remove();
     });
     
     // Zone de fermeture -
-    var closeZone2 = document.createElement('div');
+    const closeZone2 = document.createElement('div');
     closeZone2.className = 'close-zone2';
     closeZone2.addEventListener('click', function() {
         container.remove();

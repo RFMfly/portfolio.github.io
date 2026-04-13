@@ -30,7 +30,7 @@ h1 {
     left: 50%;
     transform: translateX(-50%);
     color: rgb(255, 255, 255);
-    text-shadow: 0 1vh 3vh rgba(0, 0, 0, 0.9);
+    text-shadow: 0 1vh 3vh rgb (0, 0, 0, 0.9);
     font-size: clamp(18px, 3vw, 36px);
 }
 

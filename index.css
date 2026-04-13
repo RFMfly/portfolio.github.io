@@ -1,27 +1,17 @@
 body {
     margin: 0;
     overflow-x: hidden;
-    min-height: 100vh;
+    overflow: scroll;
     width: 100%;
     min-width: 500px;
     min-height: 500px;
-    overflow: scroll;
     font-size: clamp(15px, 2vw, 18px);
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    background-image: url('images/fond_d_ecran.jpg');
+    background-size: cover;
+    background-position: center;
 }
-.fond {
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    min-width: 500px;
-    min-height: 500px;
-    object-fit: cover;
-    object-position: center;
-    z-index: -1;
-    margin: 0;
 
-}
 
 h1 {
     position: absolute;
@@ -33,24 +23,34 @@ h1 {
     font-size: clamp(18px, 3vw, 36px);
 }
 
+/* Layout principal */
 .home-grid {
     position: relative;
     height: 100vh;
 }
 
-.about-links, .work-links, .stack-links, .bin {
+.about-links,
+.work-links,
+.stack-links,
+.bin {
     width: min(44vw, 460px);
     padding: 0.6rem;
     text-align: center;
-    /* background-color: rgba(255, 255, 255, 0.15); */
-    box-shadow: 0 1vh 3vh rgba(0, 0, 0, 0.3);
-    border-radius: 16px;
     color: rgb(255, 255, 255);
     text-shadow: 0 1vh 3vh rgba(0, 0, 0, 0.9);
     background: rgba(208, 199, 199, 0.35);
+    border-radius: 16px;
+    box-shadow: 0 1vh 3vh rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(0.5px);
 }
 
+section h2 {
+    grid-column: 1 / -1;
+    margin: 0 0 0.5rem;
+    font-size: clamp(16px, 2vw, 24px);
+}
+
+/* Blocs de liens */
 .about-links {
     position: absolute;
     top: 6vh;
@@ -71,8 +71,8 @@ h1 {
 
 .stack-links {
     position: absolute;
-    left: 3vw;
     bottom: 3vh;
+    left: 3vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -88,23 +88,28 @@ h1 {
     justify-content: center;
 }
 
-button {
+/* Boutons */
+button{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
     gap: 0.25rem;
     color: rgb(255, 255, 255);
-    border: none;
+    text-decoration: none;
     background-color: transparent;
+    border: none;
     cursor: pointer;
 }
 
-section h2 {
-    grid-column: 1 / -1;
-    margin: 0 0 0.5rem;
-    font-size: clamp(16px, 2vw, 24px);
+.item-name {
+    font-weight: 600;
+    font-size: clamp(10px, 1.8vw, 16px);
+}
+
+.icon {
+    width: 7.5vh;
+    padding: 0.2rem;
 }
 
 @media (max-width: 600px) {
@@ -127,10 +132,7 @@ section h2 {
         width: auto;
     }
 
-    .about-links {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
+    .about-links,
     .work-links,
     .stack-links {
         grid-template-columns: repeat(2, 1fr);
@@ -140,16 +142,3 @@ section h2 {
         justify-self: start;
     }
 }
-
-
-.item-name {
-    font-weight: 600;
-    font-size: clamp(10px, 1.8vw, 16px);
-
-}
-
-.icon {
-  padding: 0.2rem;
-    width: 7.5vh;
-}
-
