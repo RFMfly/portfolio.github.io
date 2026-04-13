@@ -19,14 +19,14 @@ let blockimg = document.querySelector(".image img")
 
 
 let images = [
-    "../images/galleries/noir_blanc/n-b_1.jpeg",
-    "../images/galleries/noir_blanc/n-b_2.jpeg",
-    "../images/galleries/noir_blanc/n-b_3.jpeg",
-    "../images/galleries/noir_blanc/n-b_4.jpeg",
-    "../images/galleries/noir_blanc/n-b_5.jpeg",
-    "../images/galleries/noir_blanc/n-b_6.jpeg",
-    "../images/galleries/noir_blanc/n-b_7.jpeg",
-    "../images/galleries/noir_blanc/n-b_8.jpeg"
+    "images/galleries/noir_blanc/n-b_1.jpeg",
+    "images/galleries/noir_blanc/n-b_2.jpeg",
+    "images/galleries/noir_blanc/n-b_3.jpeg",
+    "images/galleries/noir_blanc/n-b_4.jpeg",
+    "images/galleries/noir_blanc/n-b_5.jpeg",
+    "images/galleries/noir_blanc/n-b_6.jpeg",
+    "images/galleries/noir_blanc/n-b_7.jpeg",
+    "images/galleries/noir_blanc/n-b_8.jpeg"
 ];
 let i = 0;
 
